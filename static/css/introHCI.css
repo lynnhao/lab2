@@ -1,19 +1,75 @@
-/* applies to anything of class "example-class-selector" */
-.example-class-selector {
-	margin-top: 2em;
+@media (min-width: @screen-xs); {
+     h1 {
+          font-size: 6rem;
+          line-height: normal;
+     }
 }
 
-/* applies to any <p> descendants of an element of class "example-class-selector" */
-.example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
-	color: #CC00AA;
-}
-
-/* this style exists to make it obvious that you've successfully linked
-   the CSS to the page. feel free to remove it once the link is working. */
 body {
-     border: 1px dotted gray;
-     padding: 20px;
+     /*border: 1px dotted gray;
+     padding: 20rem;*/
+     background-color: #D2D7D3;
+}
+h1 {
+     font-size: 14rem;
+     font-family: Grand Hotel;
+     color: #DB0A5B;
+;
+}
+/*.wrapper {
+     width: auto;
+     position: relative;
+}*/
+.main {
+     /*background-repeat: repeat-x repeat-y;*/
+     background-color: #D2D7D3;
+}
+.bar {
+     background-color: white;
+     height: 5rem;
+     display: block;
+     margin-top: 27rem;
+     z-index:999;
+
+     float: center;
+     padding-top: 10rem;
+     text-align: center;
+}
+.intro {
+     padding-top: 12rem;
+     padding-bottom: 6rem;
+}
+
+.name{ 
+     /*margin-left: 50%;
+     margin-right: 50%;*/
+     opacity:0.5;
+}
+
+.icon {
+     height: 3rem;
+     margin-right: 1.3rem;
+     transition: all 0.5s ease;
+}
+
+.icon:hover {
+     opacity: 0.2;
+     transition: all 0.5s ease;
+}
+
+.snapshot {
+     margin: 1rem;
+     border: 2px solid white;
+     transition:  all 1s ease;
+}
+
+.snapshot:hover {
+     opacity: 0.6;
+     transition: all 1s ease;
+}
+
+.project {
+
 }
 
 .jumbotron {
@@ -32,3 +88,4 @@ body {
      position: absolute;
      z-index: -1;	
 }
+
